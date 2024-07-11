@@ -1,65 +1,488 @@
+---
+
+---
+
 <div class="p-3">
   <h2 class="text-3xl">Buttons</h2>
 
   <h3 class="text-2xl p-4">Default</h3>
   <div class="text-center pb-4">
-    <lux-button id="btn-default"> Default </lux-button>
-    <lux-button color="primary"> Primary</lux-button>
-    <lux-button color="secondary"> Secondary</lux-button>
-    <lux-button color="accent"> Accent</lux-button>
-    <lux-button color="danger"> Danger</lux-button>
-    <lux-button color="success"> Success</lux-button>
-    <lux-button color="warning"> Warning</lux-button>
-    <lux-button color="info"> Info</lux-button>
-  </div>
-
-  <hr />
-
-  <h3 class="text-2xl p-4">Outline</h3>
-  <div class="text-center pb-4">
-    <lux-button variant="outline">Outline</lux-button>
-    <lux-button variant="outline" color="primary"> Primary</lux-button>
-    <lux-button variant="outline" color="secondary"> Secondary</lux-button>
-    <lux-button variant="outline" color="accent"> Accent</lux-button>
-    <lux-button variant="outline" color="danger"> Danger</lux-button>
-    <lux-button variant="outline" color="success"> Success</lux-button>
-    <lux-button variant="outline" color="warning"> Warning</lux-button>
-    <lux-button variant="outline" color="info"> Info</lux-button>
-  </div>
-  <hr />
-
-  <h3 class="text-2xl p-4">Flat</h3>
-  <div class="text-center pb-4">
-    <lux-button variant="flat">Flat</lux-button>
-    <lux-button variant="flat" color="primary"> Primary</lux-button>
-    <lux-button variant="flat" color="secondary"> Secondary</lux-button>
-    <lux-button variant="flat" color="accent"> Accent</lux-button>
-    <lux-button variant="flat" color="danger"> Danger</lux-button>
-    <lux-button variant="flat" color="success"> Success</lux-button>
-    <lux-button variant="flat" color="warning"> Warning</lux-button>
-    <lux-button variant="flat" color="info"> Info</lux-button>
-  </div>
-  <hr />
-
-  <h3 class="text-2xl p-4">Raised</h3>
-  <div class="text-center pb-4">
-    <lux-button variant="raised">Raised</lux-button>
-    <lux-button variant="raised" color="primary"> Primary</lux-button>
-    <lux-button variant="raised" color="secondary"> Secondary</lux-button>
-    <lux-button variant="raised" color="accent"> Accent</lux-button>
-    <lux-button variant="raised" color="danger"> Danger</lux-button>
-    <lux-button variant="raised" color="success"> Success</lux-button>
-    <lux-button variant="raised" color="warning"> Warning</lux-button>
-    <lux-button variant="raised" color="info"> Info</lux-button>
+    <div>
+      <lux-button id="btn-default"> Default </lux-button>
+      <lux-button id="btn-primary" color="primary"> Primary</lux-button>
+      <lux-button id="btn-secondary" color="secondary"> Secondary</lux-button>
+      <lux-button id="btn-accent" color="accent"> Accent</lux-button>
+      <lux-button id="btn-danger" color="danger"> Danger</lux-button>
+      <lux-button id="btn-success" color="success"> Success</lux-button>
+      <lux-button id="btn-warning" color="warning"> Warning</lux-button>
+      <lux-button id="btn-info" color="info"> Info</lux-button>
+    </div>
+    <div class="p-4">
+      <pre>
+        <code id="code-container" class="language-html">&lt;lux-button&gt; Default &lt;/lux-button&gt;</code>
+      </pre>
+    </div>
   </div>
 </div>
+
+<hr />
+
+<h3 class="text-2xl p-4">Outline</h3>
+<div class="text-center pb-4">
+<div>
+  <lux-button id="btn-outline-default" variant="outline">Outline</lux-button>
+  <lux-button id="btn-outline-primary" variant="outline" color="primary"> Primary</lux-button>
+  <lux-button id="btn-outline-secondary" variant="outline" color="secondary"> Secondary</lux-button>
+  <lux-button id="btn-outline-accent" variant="outline" color="accent"> Accent</lux-button>
+  <lux-button id="btn-outline-danger" variant="outline" color="danger"> Danger</lux-button>
+  <lux-button id="btn-outline-success" variant="outline" color="success"> Success</lux-button>
+  <lux-button id="btn-outline-warning" variant="outline" color="warning"> Warning</lux-button>
+  <lux-button id="btn-outline-info" variant="outline" color="info"> Info</lux-button>
+</div>
+<div class="p-4">
+   <pre>
+     <code id="code-container-outline" class="language-html">&lt;lux-button variant="outline"&gt; Outline &lt;/lux-button&gt;</code>
+   </pre>
+</div>
+</div>
+<hr />
+
+<h3 class="text-2xl p-4">Flat</h3>
+<div class="text-center pb-4">
+  <div>
+    <lux-button id="btn-flat-default" variant="flat">Flat</lux-button>
+    <lux-button id="btn-flat-primary" variant="flat" color="primary"> Primary</lux-button>
+    <lux-button id="btn-flat-secondary" variant="flat" color="secondary"> Secondary</lux-button>
+    <lux-button id="btn-flat-accent" variant="flat" color="accent"> Accent</lux-button>
+    <lux-button id="btn-flat-danger" variant="flat" color="danger"> Danger</lux-button>
+    <lux-button id="btn-flat-success" variant="flat" color="success"> Success</lux-button>
+    <lux-button id="btn-flat-warning" variant="flat" color="warning"> Warning</lux-button>
+    <lux-button id="btn-flat-info" variant="flat" color="info"> Info</lux-button>
+  </div>
+  <div class="p-4">
+    <pre>
+      <code id="code-container-flat" class="language-html">&lt;lux-button variant="flat"&gt; Flat &lt;/lux-button&gt;</code>
+    </pre>
+  </div>
+</div>
+<hr />
+
+<h3 class="text-2xl p-4">Raised</h3>
+<div class="text-center pb-4">
+  <div>
+    <lux-button id="btn-raised-default" variant="raised">Raised</lux-button>
+    <lux-button id="btn-raised-primary" variant="raised" color="primary"> Primary</lux-button>
+    <lux-button id="btn-raised-secondary" variant="raised" color="secondary"> Secondary</lux-button>
+    <lux-button id="btn-raised-accent" variant="raised" color="accent"> Accent</lux-button>
+    <lux-button id="btn-raised-danger" variant="raised" color="danger"> Danger</lux-button>
+    <lux-button id="btn-raised-success" variant="raised" color="success"> Success</lux-button>
+    <lux-button id="btn-raised-warning" variant="raised" color="warning"> Warning</lux-button>
+    <lux-button id="btn-raised-info" variant="raised" color="info"> Info</lux-button>
+  </div>
+  <div class="p-4">
+    <pre>
+      <code id="code-container-raised" class="language-html">&lt;lux-button variant="raised"&gt; Raised &lt;/lux-button&gt;</code>
+    </pre>
+  </div>
+</div>
+
 <script>
   import "lux-ui-kit";
+  import Prism from "prismjs";
+  import "prismjs/themes/prism.css";
+
+  const btnCodes = {
+    btnDefault: {
+      default: ` &lt;lux-button&gt; Default &lt;/lux-button&gt;`,
+      primary: ` &lt;lux-button color="primary"&gt; Primary&lt;/lux-button&gt;`,
+      secondary: ` &lt;lux-button color="secondary"&gt; Secondary&lt;/lux-button&gt;`,
+      accent: ` &lt;lux-button color="accent"&gt; Accent&lt;/lux-button&gt;`,
+      danger: ` &lt;lux-button color="danger"&gt; Danger&lt;/lux-button&gt;`,
+      success: ` &lt;lux-button color="success"&gt; Success&lt;/lux-button&gt;`,
+      warning: ` &lt;lux-button color="warning"&gt; Warning&lt;/lux-button&gt;`,
+      info: ` &lt;lux-button color="info"&gt; Info&lt;/lux-button&gt;`,
+    },
+    btnOutline: {
+      default: ` &lt;lux-button variant="outline"&gt; Default &lt;/lux-button&gt;`,
+      primary: ` &lt;lux-button variant="outline" color="primary"&gt; Primary&lt;/lux-button&gt;`,
+      secondary: ` &lt;lux-button variant="outline" color="secondary"&gt; Secondary&lt;/lux-button&gt;`,
+      accent: ` &lt;lux-button variant="outline" color="accent"&gt; Accent&lt;/lux-button&gt;`,
+      danger: ` &lt;lux-button variant="outline" color="danger"&gt; Danger&lt;/lux-button&gt;`,
+      success: ` &lt;lux-button variant="outline" color="success"&gt; Success&lt;/lux-button&gt;`,
+      warning: ` &lt;lux-button variant="outline" color="warning"&gt; Warning&lt;/lux-button&gt;`,
+      info: ` &lt;lux-button variant="outline" color="info"&gt; Info&lt;/lux-button&gt;`,
+    },
+    btnFlat: {
+      default: ` &lt;lux-button variant="flat"&gt; Default &lt;/lux-button&gt;`,
+      primary: ` &lt;lux-button variant="flat" color="primary"&gt; Primary&lt;/lux-button&gt;`,
+      secondary: ` &lt;lux-button variant="flat" color="secondary"&gt; Secondary&lt;/lux-button&gt;`,
+      accent: ` &lt;lux-button variant="flat" color="accent"&gt; Accent&lt;/lux-button&gt;`,
+      danger: ` &lt;lux-button variant="flat" color="danger"&gt; Danger&lt;/lux-button&gt;`,
+      success: ` &lt;lux-button variant="flat" color="success"&gt; Success&lt;/lux-button&gt;`,
+      warning: ` &lt;lux-button variant="flat" color="warning"&gt; Warning&lt;/lux-button&gt;`,
+      info: ` &lt;lux-button variant="flat" color="info"&gt; Info&lt;/lux-button&gt;`,
+    },
+    btnRaised: {
+      default: ` &lt;lux-button variant="raised"&gt; Default &lt;/lux-button&gt;`,
+      primary: ` &lt;lux-button variant="raised" color="primary"&gt; Primary&lt;/lux-button&gt;`,
+      secondary: ` &lt;lux-button variant="raised" color="secondary"&gt; Secondary&lt;/lux-button&gt;`,
+      accent: ` &lt;lux-button variant="raised" color="accent"&gt; Accent&lt;/lux-button&gt;`,
+      danger: ` &lt;lux-button variant="raised" color="danger"&gt; Danger&lt;/lux-button&gt;`,
+      success: ` &lt;lux-button variant="raised" color="success"&gt; Success&lt;/lux-button&gt;`,
+      warning: ` &lt;lux-button variant="raised" color="warning"&gt; Warning&lt;/lux-button&gt;`,
+      info: ` &lt;lux-button variant="raised" color="info"&gt; Info&lt;/lux-button&gt;`,
+    }
+  };
 
   const btnDefault = document.getElementById("btn-default");
   if (btnDefault) {
     btnDefault.addEventListener("click", () => {
-      alert("Clicked!");
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.default;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnPrimary = document.getElementById("btn-primary");
+  if (btnPrimary) {
+    btnPrimary.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.primary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnSecondary = document.getElementById("btn-secondary");
+  if (btnSecondary) {
+    btnSecondary.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.secondary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnAccent = document.getElementById("btn-accent");
+  if (btnAccent) {
+    btnAccent.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.accent;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnDanger = document.getElementById("btn-danger");
+  if (btnDanger) {
+    btnDanger.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.danger;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnSuccess = document.getElementById("btn-success");
+  if (btnSuccess) {
+    btnSuccess.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.success;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnWarning = document.getElementById("btn-warning");
+  if (btnWarning) {
+    btnWarning.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.warning;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnInfo = document.getElementById("btn-info");
+  if (btnInfo) {
+    btnInfo.addEventListener("click", () => {
+      const code = document.getElementById("code-container");
+      if (code) {
+        code.innerHTML = btnCodes.btnDefault.info;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineDefault = document.getElementById("btn-outline-default");
+  if (btnOutlineDefault) {
+    btnOutlineDefault.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.default;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlinePrimary = document.getElementById("btn-outline-primary");
+  if (btnOutlinePrimary) {
+    btnOutlinePrimary.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.primary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineSecondary = document.getElementById("btn-outline-secondary");
+  if (btnOutlineSecondary) {
+    btnOutlineSecondary.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.secondary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineAccent = document.getElementById("btn-outline-accent");
+  if (btnOutlineAccent) {
+    btnOutlineAccent.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.accent;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineDanger = document.getElementById("btn-outline-danger");
+  if (btnOutlineDanger) {
+    btnOutlineDanger.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.danger;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineSuccess = document.getElementById("btn-outline-success");
+  if (btnOutlineSuccess) {
+    btnOutlineSuccess.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.success;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineWarning = document.getElementById("btn-outline-warning");
+  if (btnOutlineWarning) {
+    btnOutlineWarning.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.warning;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnOutlineInfo = document.getElementById("btn-outline-info");
+  if (btnOutlineInfo) {
+    btnOutlineInfo.addEventListener("click", () => {
+      const code = document.getElementById("code-container-outline");
+      if (code) {
+        code.innerHTML = btnCodes.btnOutline.info;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatDefault = document.getElementById("btn-flat-default");
+  if (btnFlatDefault) {
+    btnFlatDefault.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.default;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatPrimary = document.getElementById("btn-flat-primary");
+  if (btnFlatPrimary) {
+    btnFlatPrimary.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.primary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatSecondary = document.getElementById("btn-flat-secondary");
+  if (btnFlatSecondary) {
+    btnFlatSecondary.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.secondary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatAccent = document.getElementById("btn-flat-accent");
+  if (btnFlatAccent) {
+    btnFlatAccent.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.accent;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatDanger = document.getElementById("btn-flat-danger");
+  if (btnFlatDanger) {
+    btnFlatDanger.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.danger;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatSuccess = document.getElementById("btn-flat-success");
+  if (btnFlatSuccess) {
+    btnFlatSuccess.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.success;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatWarning = document.getElementById("btn-flat-warning");
+  if (btnFlatWarning) {
+    btnFlatWarning.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.warning;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnFlatInfo = document.getElementById("btn-flat-info");
+  if (btnFlatInfo) {
+    btnFlatInfo.addEventListener("click", () => {
+      const code = document.getElementById("code-container-flat");
+      if (code) {
+        code.innerHTML = btnCodes.btnFlat.info;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedDefault = document.getElementById("btn-raised-default");
+  if (btnRaisedDefault) {
+    btnRaisedDefault.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.default;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedPrimary = document.getElementById("btn-raised-primary");
+  if (btnRaisedPrimary) {
+    btnRaisedPrimary.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.primary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedSecondary = document.getElementById("btn-raised-secondary");
+  if (btnRaisedSecondary) {
+    btnRaisedSecondary.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.secondary;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedAccent = document.getElementById("btn-raised-accent");
+  if (btnRaisedAccent) {
+    btnRaisedAccent.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.accent;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedDanger = document.getElementById("btn-raised-danger");
+  if (btnRaisedDanger) {
+    btnRaisedDanger.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.danger;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedSuccess = document.getElementById("btn-raised-success");
+  if (btnRaisedSuccess) {
+    btnRaisedSuccess.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.success;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedWarning = document.getElementById("btn-raised-warning");
+  if (btnRaisedWarning) {
+    btnRaisedWarning.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.warning;
+        Prism.highlightElement(code);
+      }
+    });
+  }
+
+  const btnRaisedInfo = document.getElementById("btn-raised-info");
+  if (btnRaisedInfo) {
+    btnRaisedInfo.addEventListener("click", () => {
+      const code = document.getElementById("code-container-raised");
+      if (code) {
+        code.innerHTML = btnCodes.btnRaised.info;
+        Prism.highlightElement(code);
+      }
     });
   }
 </script>
