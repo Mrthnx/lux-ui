@@ -3,7 +3,7 @@
 
   <h3 class="text-2xl p-4">Default</h3>
   <div class="text-center pb-4">
-    <lux-button> Default </lux-button>
+    <lux-button id="btn-default"> Default </lux-button>
     <lux-button color="primary"> Primary</lux-button>
     <lux-button color="secondary"> Secondary</lux-button>
     <lux-button color="accent"> Accent</lux-button>
@@ -55,4 +55,11 @@
 </div>
 <script>
   import "lux-ui-kit";
+
+  const btnDefault = document.getElementById("btn-default");
+  if (btnDefault) {
+    btnDefault.addEventListener("click", () => {
+      alert("Clicked!");
+    });
+  }
 </script>
