@@ -1,12 +1,178 @@
 <div class="p-3">
   <h2 class="text-3xl">Inputs</h2>
 
-  <h3 class="text-2xl p-4">Defaults</h3>
-  <div class="pb-4">
-    <lux-text-input label="Name" placeholder="Enter name"> </lux-text-input>
+  <div class="flex flex-row gap-4">
+    <div class="w-1/2">
+      <h3 class="text-2xl p-4">Defaults</h3>
+      <div class="pl-4 pb-4">
+        <lux-text-input
+          label="Name"
+          placeholder="Enter name"
+          value="My Name is Lux"
+        >
+        </lux-text-input>
+      </div>
+      <div class="p-4">
+        <pre>
+          <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" placeholder="Enter name" value="My name is Lux" &gt; Defaults &lt;/lux-text-input&gt;</code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="w-1/2">
+      <h3 class="text-2xl p-4">Disabled</h3>
+      <div class="pl-4 pb-4">
+        <lux-text-input
+          disabled="true"
+          label="Name"
+          placeholder="Enter name"
+          value="My Name is Lux"
+        >
+        </lux-text-input>
+      </div>
+      <div class="p-4">
+        <pre>
+          <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" disabled="true" placeholder="Enter name" value="My name is Lux" &gt; Disabled &lt;/lux-text-input&gt;</code>
+        </pre>
+      </div>
+    </div>
   </div>
 
-  <script>
-    import "lux-ui-kit";
-  </script>
+  <div class="flex flex-row gap-4">
+    <div class="w-1/3">
+      <h3 class="text-2xl p-4">Float</h3>
+      <div class="pl-4 pb-4">
+        <lux-text-input
+          variant="float"
+          label="Name"
+          placeholder="Enter name"
+          value="My Name is Lux"
+        >
+        </lux-text-input>
+      </div>
+      <div class="p-4">
+        <pre>
+          <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="float" placeholder="Enter name" value="My name is Lux" &gt; Float &lt;/lux-text-input&gt;</code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="w-1/3">
+      <h3 class="text-2xl p-4">Outline</h3>
+      <div class="pl-4 pb-4">
+        <lux-text-input
+          variant="outline"
+          label="Name"
+          placeholder="Enter name"
+          value="My Name is Lux"
+        >
+        </lux-text-input>
+      </div>
+      <div class="p-4">
+        <pre>
+          <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="outline" placeholder="Enter name" value="My name is Lux" &gt; Outline &lt;/lux-text-input&gt;</code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="w-1/3">
+      <h3 class="text-2xl p-4">Fill</h3>
+      <div class="pl-4 pb-4">
+        <lux-text-input
+          variant="fill"
+          label="Name"
+          placeholder="Enter name"
+          value="My Name is Lux"
+        >
+        </lux-text-input>
+      </div>
+      <div class="p-4">
+        <pre>
+          <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="fill" placeholder="Enter name" value="My name is Lux" &gt; Fill &lt;/lux-text-input&gt;</code>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <div class="flex">
+      <div class="w-1/2">
+        <h3 class="text-2xl p-4">Primary</h3>
+        <div class="pl-4 pb-4">
+          <lux-text-input
+            variant="float"
+            color="primary"
+            label="Name"
+            placeholder="Enter name"
+            value="My Name is Lux"
+          >
+          </lux-text-input>
+        </div>
+        <div class="p-4">
+          <pre>
+          <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="float" color="primary" placeholder="Enter name" value="My name is Lux" &gt; Primary &lt;/lux-text-input&gt;</code>
+        </pre>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <h3 class="text-2xl p-4">Accent</h3>
+        <div class="pl-4 pb-4">
+          <lux-text-input
+            variant="outline"
+            color="accent"
+            label="Name"
+            placeholder="Enter name"
+            value="My Name is Lux"
+          >
+          </lux-text-input>
+        </div>
+        <div class="p-4">
+          <pre>
+            <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="outline" color="accent" placeholder="Enter name" value="My name is Lux" &gt; Accent &lt;/lux-text-input&gt;</code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-1/2">
+        <h3 class="text-2xl p-4">Success</h3>
+        <div class="pl-4 pb-4">
+          <lux-text-input
+            variant="fill"
+            color="success"
+            label="Name"
+            placeholder="Enter name"
+            value="My Name is Lux"
+          >
+          </lux-text-input>
+        </div>
+        <div class="p-4">
+          <pre>
+              <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="fill" color="success" placeholder="Enter name" value="My name is Lux" &gt; Success &lt;/lux-text-input&gt;</code>
+            </pre>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <h3 class="text-2xl p-4">Danger</h3>
+        <div class="pl-4 pb-4">
+          <lux-text-input
+            variant="fill"
+            color="danger"
+            label="Name"
+            placeholder="Enter name"
+            value="My Name is Lux"
+          >
+          </lux-text-input>
+        </div>
+        <div class="p-4">
+          <pre>
+                <code id="code-container-raised" class="language-html">&lt;lux-text-input label="Name" variant="fill" color="danger" placeholder="Enter name" value="My name is Lux" &gt; Danger &lt;/lux-text-input&gt;</code>
+              </pre>
+        </div>
+      </div>
+    </div>
+    <script>
+      import "lux-ui-kit";
+    </script>
+  </div>
 </div>
