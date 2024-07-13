@@ -4,15 +4,17 @@ import Button from "../components/Button.astro";
 import GetStarted from "../components/GetStarted.astro";
 import Input from "../components/Input.astro";
 import Main from "../components/Main.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Lux UI Kit">
   <div class="flex justify-center p-0 sm:p-4">
     <div class="sm:w-3/4 w-11/12">
-      <Main />
-      <GetStarted />
-      <Button />
-      <Input />
+      <Main id="main" />
+      <GetStarted id="get-started" />
+      <Button id="button" />
+      <Input id="input" />
+      <Card id="card" />
     </div>
   </div>
 </Layout>

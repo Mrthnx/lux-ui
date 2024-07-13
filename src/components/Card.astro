@@ -1,0 +1,32 @@
+---
+const { id } = Astro.props;
+---
+
+<div id={id} tabindex="-1" class="p-3">
+  <h2 class="text-3xl">Cards</h2>
+  <div class="p-3">
+    <lux-card
+      title-text="My title"
+      subtitle-text="My subtitle: card with color default"></lux-card>
+  </div>
+  <div class="p-3">
+    <lux-card
+      title-text="My title"
+      subtitle-text="My subtitle: card with color primary"
+      color="primary"></lux-card>
+  </div>
+  <div class="p-3">
+    <lux-card
+      title-text="My title"
+      subtitle-text="My subtitle: card with color warning"
+      color="warning"></lux-card>
+  </div>
+  <div class="p-3">
+    <pre><code class="language-html">&lt;lux-card title-text="My title" subtitle-text="My subtitle: card with color default" color="default"&gt;&lt;/lux-card&gt;</code></pre>
+  </div>
+</div>
+<br />
+
+<script>
+  import "lux-ui-kit";
+</script>

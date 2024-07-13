@@ -1,4 +1,8 @@
-<div class="p-3">
+---
+const { id } = Astro.props;
+---
+
+<div id={id} class="p-3">
   <h2 class="text-3xl">Inputs</h2>
 
   <div class="flex sm:flex-row gap-4 flex-col">
