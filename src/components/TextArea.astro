@@ -1,0 +1,26 @@
+---
+const { id } = Astro.props;
+---
+
+<div id={id} class="p-3">
+  <h2 class="text-3xl">Text Area</h2>
+  <div class="p-4">
+    <lux-textarea
+      label="Name"
+      placeholder="Enter name"
+      variant="float"
+      color="primary"
+    >
+      My name is Lux
+    </lux-textarea>
+  </div>
+  <div class="p-4">
+    <pre>
+      <code id="code-container-raised" class="language-html">&lt;lux-textarea label="Name" placeholder="Enter name" variant="float" color="primary" &gt; My name is Lux &lt;/lux-textarea&gt;</code>
+    </pre>
+  </div>
+</div>
+
+<script>
+  import "lux-ui-kit";
+</script>
