@@ -1,0 +1,25 @@
+---
+const { id } = Astro.props;
+---
+
+<div id={id} class="p-3">
+  <h2 class="text-3xl">Select</h2>
+  <div class="p-4">
+    <lux-select
+      label="Colors"
+      placeholder="Select one color"
+      variant="float"
+      color="primary"
+      value=""
+    >
+      <option value="1">Red</option>
+      <option value="2">Green</option>
+      <option value="3">Blue</option>
+    </lux-select>
+  </div>
+  <div class="p-4">
+    <pre>
+      <code id="code-container-raised" class="language-html">&lt;lux-select label="Colors" placeholder="Select one color" variant="float" color="primary" value="" &gt; &lt;option value="1"&gt;Red&lt;/option&gt; &lt;option value="2"&gt;Green&lt;/option&gt; &lt;option value="3"&gt;Blue&lt;/option&gt; &lt;/lux-select&gt;</code>
+    </pre>
+  </div>
+</div>
